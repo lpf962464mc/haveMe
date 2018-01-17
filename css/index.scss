@@ -3,7 +3,9 @@ ul,li { list-style: none;}
 a{
     text-decoration: none;
 }
+
 $headerColor:#999999;
+//第一行
 .header{
     width: 100%;
     height: 30px;
@@ -63,6 +65,135 @@ $headerColor:#999999;
              }
         
         }
+    } 
+}
+//logo图
+.log{
+    width: 100%;
+    height: 140px;
+    clear: both;
+    .log_con{
+        width:1200px;
+        height: 105px;
+        margin: 0 auto;
+        padding-top: 35px;
+        .log_img{
+            float: left;
+            .img1{
+                display: block;
+                float: left;
+                height: 58px;
+                width: 146px;
+            }
+            .img2{
+                height: 67px;
+                width: 238px;
+            }
+        }
     }
-    
+    .search{
+       float:left;
+       form{
+           p a{
+               font-size: 12px;
+               color: $headerColor;
+               margin-right: 15px;
+           }
+           div{
+               border: 2px solid #4bc7df;
+              .input_text{
+               width: 405px;
+               height: 40px;
+               vertical-align: middle;
+               border: none;
+                }
+             .sub{
+               height: 41px;
+               width: 80px;
+               background: #1690bf;
+               font-size: 20px;
+               color: white;          
+                vertical-align: middle;
+               border: none;  
+               cursor: pointer;
+                 }
+           }      
+       }       
+    }
+    .promise{
+        float: right;
+        img{
+            float: right;
+        }
+        span{
+            display: block;
+            float: left;
+            font-size: 12px;
+            color: $headerColor;
+            margin-left: 35px;
+        }
+    }
+}
+
+//导航栏
+.nav{
+    height:38px ;
+    width: 100%;
+    clear: both;
+    border-bottom: 2px solid #4bc7df;
+    .nav_con{
+        height: 30px;
+        width: 1200px;
+        margin: 0 auto;
+        .goodList{
+            height: 38px;
+            width: 213px;
+            background: #4bc7df;
+            position: relative;
+            float: left;
+            p{
+                font-size: 16px;
+                color: white;
+                height: 38px;
+                line-height: 38px;
+               text-align: center;
+            }
+            img{
+               display: block; 
+               width: 232px;position: absolute;
+               bottom: -2px;
+            }
+        }
+        ul li{
+            float: left;
+            width: 125px;
+            height: 38px;
+            line-height: 38px;
+            
+            a{
+                color: #333333;
+                font-size: 14px;    
+            }
+        }
+        ul li:first-child{
+            padding-left: 40px;
+            a{
+                color: #4BC7DF;
+            }
+        }
+        ul li:nth-child(6){
+            width: 90px;
+        }
+    }
+}
+//banner图
+.banner{
+    height: 585px;
+    width: 100%;
+    position: relative;
+//  .banner_con{
+//      height: 585px;
+//      width: 1200px;
+//      margin:0 auto;
+//  }
 }
