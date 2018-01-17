@@ -1,0 +1,56 @@
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input {
+  padding: 0;
+  margin: 0; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  width: 100%;
+  height: 30px;
+  background: #f5f5f5;
+  font-size: 12px;
+  line-height: 30px; }
+  .header .tit {
+    height: 30px;
+    width: 1200px;
+    margin: 0 auto; }
+    .header .tit .left {
+      float: left; }
+      .header .tit .left p {
+        float: left;
+        color: #999999;
+        margin-right: 10px; }
+      .header .tit .left .register, .header .tit .left .login {
+        display: block;
+        float: left;
+        color: #d91e16; }
+    .header .tit .right {
+      float: right; }
+      .header .tit .right a {
+        display: block;
+        float: left;
+        color: #999999;
+        margin-left: 15px;
+        text-align: center; }
+        .header .tit .right a span {
+          margin-left: 5px; }
+      .header .tit .right p {
+        float: left;
+        color: #999999;
+        width: 80px;
+        padding: 0 0 0 20px; }
+        .header .tit .right p span {
+          display: block;
+          margin-right: 15px;
+          float: right; }
+      .header .tit .right .p1 {
+        margin-left: 15px;
+        background: url(../img/top_bar_icon.png) no-repeat 0 -30px; }
+      .header .tit .right .p2 {
+        background: url(../img/top_bar_icon.png) no-repeat 0 -90px; }
+      .header .tit .right .p3 {
+        background: url(../img/top_bar_icon.png) no-repeat 0 -150px; }
