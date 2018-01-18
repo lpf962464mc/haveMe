@@ -1,23 +1,24 @@
-//轮播图
+var slideShow=(function(){
+	//轮播图
 //1、定义类
-function SlideShow(boxDom,width,height,imgs,timespace,btnWidth,btnHeight,btnColor,btnHighColor){
+	function SlideShow(boxDom,width,height,imgs,timespace,btnWidth,btnHeight,btnColor,btnHighColor){
 	//1）、属性
-	this.boxDom = boxDom;
-	this.width = width;
-	this.height = height;
-	//要播放的图片数组
-	this.imgs = imgs;
-	this.ord = 0;//代表当前图片的序号，从0开始。
-	this.myTimer = null;
-	
-	this.timespace = timespace;
-	
-	//轮播图中的按钮
-	this.btnWidth = btnWidth;
-	this.btnHeight = btnHeight;
-	this.btnColor = btnColor;//原始颜色
-	this.btnHighColor = btnHighColor;//高亮颜色
-	
+		this.boxDom = boxDom;
+		this.width = width;
+		this.height = height;
+		//要播放的图片数组
+		this.imgs = imgs;
+		this.ord = 0;//代表当前图片的序号，从0开始。
+		this.myTimer = null;
+		
+		this.timespace = timespace;
+		
+		//轮播图中的按钮
+		this.btnWidth = btnWidth;
+		this.btnHeight = btnHeight;
+		this.btnColor = btnColor;//原始颜色
+		this.btnHighColor = btnHighColor;//高亮颜色
+		
 	//2）、方法（函数）
 	this.initUI = function(){
 		//一、创建所有的HTML元素，并设置css样式		
@@ -27,6 +28,7 @@ function SlideShow(boxDom,width,height,imgs,timespace,btnWidth,btnHeight,btnColo
 			let imgDom = document.createElement("img");
 			imgDom.src = this.imgs[i];
 			//2)、设置样式
+			
 			imgDom.style.cssText = "position:absolute;width:"+this.width+";height:"+this.height+"px;";
 			//3)、添加到容器里
 			this.boxDom.appendChild(imgDom);
@@ -34,6 +36,7 @@ function SlideShow(boxDom,width,height,imgs,timespace,btnWidth,btnHeight,btnColo
 		
 		//2、创建ul
 		let ulDom = document.createElement("ul");
+		
 		ulDom.style.cssText = "position:absolute;bottom:60px;margin-left: 45%;";
 		//3、创建li
 		for(let i=0;i<this.imgs.length;i++){
@@ -139,15 +142,25 @@ function SlideShow(boxDom,width,height,imgs,timespace,btnWidth,btnHeight,btnColo
 	};
 	
 }
-
+	var instance;
+	return {
+		getInstance:function(boxDom,width,height,imgs,timespace,btnWidth,btnHeight,btnColor,btnHighColor){
+			return instance=new SlideShow(boxDom,width,height,imgs,timespace,btnWidth,btnHeight,btnColor,btnHighColor);
+		}
+	}
+})();
 function $(id){
-	return document.getElementById(id);
+	return document.getElementById(id)
 }
-
 window.onload = function(){
 	
-	let s = new SlideShow($("banner_SlideShow"),"100%",585,["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg"],3000,64,5,"#7a6e6e","#39bdfb");
+	let s = slideShow.getInstance($("banner_SlideShow"),"100%",585,["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg"],3000,64,5,"#7a6e6e","#39bdfb");
 	s.initUI();
 	s.initEvent();
 	s.autoChange();
+	
+	let s1 = slideShow.getInstance($("img5"),"200px",250,["img/1_05060006574070434_240.jpg","img/1_05228577980827121_240.jpg","img/1_05228593650117456_240.jpg","img/9_05015996424113082_240.jpg"],3000);
+	s1.initUI();
+	s1.initEvent();
+	s1.autoChange();
 }
