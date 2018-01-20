@@ -5,6 +5,7 @@
 <title></title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <body>
 	
@@ -30,15 +31,46 @@
 				<a href="#" target="_blank" class="register">[登录]</a>
 				<a href="#" target="_blank" class="login">[注册]</a>
 			</div>
-			<div class="right">
-				<a href="#"target="_blank">积分中心<span><img src="img/top_jt.jpg" alt="" /></span><span> |</span> </a>
-				<a href="#"target="_blank">我的订单<span><img src="img/top_jt.jpg" alt="" /></span> <span> |</span> </a>
-				<a href="#"target="_blank">我的收藏<span><img src="img/top_jt.jpg" alt="" /></span> <span> |</span> </a>
-				<a href="#"target="_blank">客户服务<span><img src="img/top_jt.jpg" alt="" /></span> <span> |</span></a>
-				<a href="#"target="_blank">商家中心<span><img src="img/top_jt.jpg" alt="" /></span> <span> |</span> </a>
-				<p class='p1'>关注我们 <span>|</span></p>
-				<p class='p2'>手机版<span>|</span></p>
+			<div class="right" id="header_right">
+				
+				<a  href="#"target="_blank">积分中心<span><img src="img/top_jt.jpg"  /><img id="a" src="img/arrowTop.jpg"/></span><span> |</span> </a>
+				
+				<a class="a" href="#"target="_blank">我的订单<span><img src="img/top_jt.jpg" /><img src="img/arrowTop.jpg"/></span> <span> |</span> </a>
+				<ul id="indent" class="a0">
+					<li><a href="#">待付款订单</a></li>
+					<li><a href="#">待确认收货</a></li>
+					<li><a href="#">待评价交易</a></li>
+				</ul>
+				
+				
+				<a class="a" href="#"target="_blank">我的收藏<span><img src="img/top_jt.jpg"  /><img src="img/arrowTop.jpg"/></span> <span> |</span> </a>
+				<ul id="collect" class="a1" >
+					<li><a href="#">商品收藏</a></li>
+					<li><a href="#">店铺收藏</a></li>
+				</ul>
+				
+				<a class="a" href="#"target="_blank">客户服务<span><img src="img/top_jt.jpg"  /><img src="img/arrowTop.jpg"/></span> <span> |</span></a>
+				<ul id="customerService" class="a2">
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">售后服务</a></li>
+					<li><a href="#">客服中心</a></li>
+				</ul>
+				
+				<a class="a" href="#"target="_blank">商家中心<span><img src="img/top_jt.jpg"  /><img src="img/arrowTop.jpg"/></span> <span> |</span> </a>
+				<ul id="merchant" class="a3">
+					<li><a href="#">商家登录</a></li>
+					<li><a href="#">门店登录</a></li>
+					<li><a href="#">商家入驻</a></li>
+				</ul>
+				
 				<p class='p3'>app下载</p>
+				<p class='p2'>手机版<span>|</span></p>
+				<p class='p1'>关注我们 <span>|</span></p>
+				
+				
+				
+				
+				
 			</div>
 		</div>
 	</div>
@@ -84,7 +116,7 @@
 				<img src="img/all_goods_class.png" alt="" />
 			</div>
 			<ul>
-				<li><a href="#">首页</a></li>
+				<li ><a href="#">首页</a></li>
 				<li><a href="#">品牌</a></li>
 				<li><a href="#">限时折扣</a></li>
 				<li><a href="#">礼品摆件</a></li>
@@ -97,41 +129,386 @@
 	</div>
 	<!--banner图-->
 	<!--banner图的内容，左中右，中间a标签的网址和背景图的内容对应-->
-	<div class="banner" >
-		<div id="banner_SlideShow">
-		</div>
-		<div class="banner_con">
-			<div class="banner_con_inc">
-				<div class="banner_con_left">
-					<ul>
-						<li><img src="img/04849352648636017.png"/><a href="#">汉中特产</a></li>
-						<li><img src="img/04849348133390475.png"/><a href="#">食品饮料</a></li>
-						<li><img src="img/04849345975757419.png"/><a href="#">家居家装</a></li>
-						<li><img src="img/04849353182209090.png"/><a href="#">母婴用品</a></li>
-						<li><img src="img/04849347515759481.png"/><a href="#">个护化妆</a></li>
-						<li><img src="img/04849346837120218.png"/><a href="#">兴汉家电</a></li>
-						<li><img src="img/04849348664379344.png"/><a href="#">汽车用品</a></li>
-						<li><img src="img/04849346415545755.png"/><a href="#">数码办公</a></li>
-						<li><img src="img/04849352366294406.png"/><a href="#">玩具乐器</a></li>
-						<li><img src="img/04849344505821846.png"/><a href="#">礼品箱包</a></li>
-						<li><img src="img/04849348436546686.png"/><a href="#">运动健康</a></li>
-						<li><img src="img/04849343852775378.png"/><a href="#">服饰鞋帽</a></li>
-						<li><img src="img/04849347913383394.png"/><a href="#">珠宝手表</a></li>
-						<li><img src="img/04849353042725089.png"/><a href="#">虚拟充值</a></li>
-					</ul>
-				</div>
-				<!--<div class="banner_con_center">
-					
-				</div>-->
-				<div class="banner_con_right">
-					<a href="#"><img src="img/web-101-102-2-1.jpg"/></a>
-					<a href="#"><img src="img/web-101-102-2-2.jpg"/></a>
-					<a href="#"><img src="img/web-101-102-2-3.jpg"/></a>
+<div class="banner" >
+	<!--轮播图盒子-->
+	<div id="banner_SlideShow">
+	</div>
+	<!--显示区域-->
+	<div class="banner_con">
+		<div class="banner_con_inc">
+			<div class="banner_con_left">
+				<ul>
+					<li><span><img src="img/04849352648636017.png"/><a href="#">汉中特产</a></span></li>
+					<li><span><img src="img/04849348133390475.png"/><a href="#">食品饮料</a></span></li>
+					<li><span><img src="img/04849345975757419.png"/><a href="#">家居家装</a></span></li>
+					<li><span><img src="img/04849353182209090.png"/><a href="#">母婴用品</span></a></li>
+					<li><span><img src="img/04849347515759481.png"/><a href="#">个护化妆</a></span></li>
+					<li><span><img src="img/04849346837120218.png"/><a href="#">兴汉家电</a></span></li>
+					<li><span><img src="img/04849348664379344.png"/><a href="#">汽车用品</a></span></li>
+					<li><span><img src="img/04849346415545755.png"/><a href="#">数码办公</a></span></li>
+					<li><span><img src="img/04849352366294406.png"/><a href="#">玩具乐器</a></span></li>
+					<li><span><img src="img/04849344505821846.png"/><a href="#">礼品箱包</a></span></li>
+					<li><span><img src="img/04849348436546686.png"/><a href="#">运动健康</a></span></li>
+					<li><span><img src="img/04849343852775378.png"/><a href="#">服饰鞋帽</a></span></li>
+					<li><span><img src="img/04849347913383394.png"/><a href="#">珠宝手表</a></span></li>
+					<li><span><img src="img/04849353042725089.png"/><a href="#">虚拟充值</a></span></li>
+				</ul>
+			</div>
+			<a href="#" class="banner_con_center">
+				
+			</a>
+			<div class="banner_con_right">
+				<a href="#"><img src="img/web-101-102-2-1.jpg"/></a>
+				<a href="#"><img src="img/web-101-102-2-2.jpg"/></a>
+				<a href="#"><img src="img/web-101-102-2-3.jpg"/></a>
+			</div>
+			
+			<!--商品列表盒子-->
+			<div class="">
+				<!--划过出现的列表0-->
+				<div class="hoverList0">
+						<div class="hoverList_left">
+							<div class="head">
+								<ul>
+									<li><a href="#">汉中仙毫</a></li>
+									<li><a href="#">西乡绿茶</a></li>
+									<li><a href="#">汉中红茶</a></li>
+									<li><a href="#">苦荞茶</a></li>
+									<li><a href="#">略阳罐罐茶</a></li>
+									<li><a href="#">翠峰</a></li>
+									<li><a href="#">毛峰</a></li>
+									<li><a href="#">定军茗眉</a></li>
+									<li><a href="#">午子仙毫</a></li>
+									<li><a href="#">汉中毛尖</a></li>
+									<li><a href="#">无花果</a></li>
+									<li><a href="#">城固特曲</a></li>
+									<li><a href="#">秦巴中华猕猴桃酒</a></li>
+									<li><a href="#">秦洋特曲</a></li>
+									<li><a href="#">勉县三粮液</a></li>
+									<li><a href="#">洋县珍稀黑米酒</a></li>
+								</ul>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+						</div>
+						<div class="hoverList_right">
+							<ul>
+								<li><a href="#"><img src="img/04397472838086984_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398089412399747_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398090218578648_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398091973797599_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398100899214207_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04397468934349942_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398100899214207_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398101708424765_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04968579176444961.jpg"/></a></li>
+								<li><a href="#"><img src="img/04968579176440957.jpg"/></a></li>
+							</ul>
+							
+						</div>
+					</div>
+				
+				<!--划过出现的列表1-->
+				<div class="hoverList1">
+						<div class="hoverList_left">
+							<div class="head">
+								<ul>
+									<li><a href="#">糖果巧克力</a></li>
+									<li><a href="#">坚果炒货</a></li>
+									<li><a href="#">食用油</a></li>
+									<li><a href="#">洋酒</a></li>
+									<li><a href="#">葡萄酒</a></li>
+									<li><a href="#">翠峰</a></li>
+									<li><a href="#">黄酒</a></li>
+									<li><a href="#">茶叶</a></li>
+									<li><a href="#">午子仙毫</a></li>
+									<li><a href="#">咖啡/奶茶</a></li>
+								</ul>
+
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+						</div>
+						<div class="hoverList_right">
+							<ul>
+								<li><a href="#"><img src="img/04397472838086984_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398089412399747_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398090218578648_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398091973797599_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398100899214207_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04397468934349942_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398100899214207_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398101708424765_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04968579176444961.jpg"/></a></li>
+								<li><a href="#"><img src="img/04968579176440957.jpg"/></a></li>
+							</ul>
+							
+						</div>
+					</div>
+				
+				<!--划过出现的列表2-->
+				<div class="hoverList2">
+						<div class="hoverList_left">
+							<div class="head">
+								<ul>
+									<li><a href="#">秦巴中华猕猴桃酒</a></li>
+									<li><a href="#">秦洋特曲</a></li>
+									<li><a href="#">勉县三粮液</a></li>
+									<li><a href="#">洋县珍稀黑米酒</a></li>
+									<li><a href="#">略阳罐罐茶</a></li>
+									<li><a href="#">翠峰</a></li>
+									<li><a href="#">毛峰</a></li>
+									<li><a href="#">定军茗眉</a></li>
+									<li><a href="#">午子仙毫</a></li>
+									<li><a href="#">汉中毛尖</a></li>
+									<li><a href="#">汉中仙毫</a></li>
+									<li><a href="#">西乡绿茶</a></li>
+									<li><a href="#">汉中红茶</a></li>
+									<li><a href="#">苦荞茶</a></li>
+									<li><a href="#">无花果</a></li>
+									<li><a href="#">城固特曲</a></li>
+									
+								</ul>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+						</div>
+						<div class="hoverList_right">
+							<ul>
+								<li><a href="#"><img src="img/04397472838086984_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398089412399747_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398090218578648_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398091973797599_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398100899214207_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04397468934349942_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398100899214207_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398101708424765_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04968579176444961.jpg"/></a></li>
+								<li><a href="#"><img src="img/04968579176440957.jpg"/></a></li>
+							</ul>
+							
+						</div>
+					</div>
+				
+				<!--划过出现的列表3-->
+				<div class="hoverList3">
+						<div class="hoverList_left">
+							<div class="head">
+								<ul>
+									<li><a href="#">无花果</a></li>
+									<li><a href="#">城固特曲</a></li>
+									<li><a href="#">秦巴中华猕猴桃酒</a></li>
+									<li><a href="#">苦荞茶</a></li>
+									<li><a href="#">略阳罐罐茶</a></li>
+									<li><a href="#">翠峰</a></li>
+									<li><a href="#">毛峰</a></li>
+									<li><a href="#">定军茗眉</a></li>
+									<li><a href="#">午子仙毫</a></li>
+									<li><a href="#">汉中毛尖</a></li>
+									<li><a href="#">秦洋特曲</a></li>
+									<li><a href="#">勉县三粮液</a></li>
+									<li><a href="#">洋县珍稀黑米酒</a></li>
+									<li><a href="#">汉中仙毫</a></li>
+									<li><a href="#">西乡绿茶</a></li>
+									<li><a href="#">汉中红茶</a></li>
+								</ul>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+							<div class="body">
+								<div class="left">
+									<h4>大家电</h4> <span>></span>
+								</div>
+								<div class="right">
+									<a href="">平板电视</a><span>|</span>
+									<a href="">空调</a><span>|</span>
+									<a href="">洗衣机</a><span>|</span>
+									<a href="">热水器</a>
+								</div>
+							</div>
+						</div>
+						<div class="hoverList_right">
+							<ul>
+								<li><a href="#"><img src="img/04397472838086984_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398089412399747_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398090218578648_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398091973797599_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398100899214207_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04397468934349942_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398100899214207_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04398101708424765_sm.jpg"/></a></li>
+								<li><a href="#"><img src="img/04968579176444961.jpg"/></a></li>
+								<li><a href="#"><img src="img/04968579176440957.jpg"/></a></li>
+							</ul>
+							
+						</div>
+					</div>
 				</div>
 			</div>
 			
 		</div>
+			
+		
+		
 	</div>
+</div>
 	
 	<!--折扣区-->
 	<div class="discount">

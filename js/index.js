@@ -1,5 +1,5 @@
+//轮播图
 var slideShow=(function(){
-	//轮播图
 //1、定义类
 	function SlideShow(boxDom,width,height,imgs,timespace,btnWidth,btnHeight,btnColor,btnHighColor){
 	//1）、属性
@@ -10,7 +10,6 @@ var slideShow=(function(){
 		this.imgs = imgs;
 		this.ord = 0;//代表当前图片的序号，从0开始。
 		this.myTimer = null;
-		
 		this.timespace = timespace;
 		
 		//轮播图中的按钮
@@ -22,11 +21,12 @@ var slideShow=(function(){
 	//2）、方法（函数）
 	this.initUI = function(){
 		//一、创建所有的HTML元素，并设置css样式		
-		//1、创建img标记
+		//1、创建img标记/a
 		for(let i=0;i<this.imgs.length;i++){
 			//1)、创建img对象
 			let imgDom = document.createElement("img");
 			imgDom.src = this.imgs[i];
+			
 			//2)、设置样式
 			
 			imgDom.style.cssText = "position:absolute;width:"+this.width+";height:"+this.height+"px;";
@@ -149,18 +149,119 @@ var slideShow=(function(){
 		}
 	}
 })();
-function $(id){
-	return document.getElementById(id)
-}
-window.onload = function(){
-	
-	let s = slideShow.getInstance($("banner_SlideShow"),"100%",585,["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg"],3000,64,5,"#7a6e6e","#39bdfb");
+
+//首页首行滑过
+var HeaderHover={
+	getFun:function(){
+		$("#header_right a").mouseenter(function(){
+//			$("#a").css({"display":"bolck"});
+
+		});
+	}
+};
+
+//滑过商品分类
+var hoverGoodsList={
+	getFun:function(obj){
+	//滑过列表
+		$(".banner_con_left ul li").each(function(i){
+			//添加一个背景图片
+			$(this).mouseenter(function(){
+				
+				var imgDom=$("<img>");
+				imgDom.attr({src:"img/index_nav_arrow.png"});
+				imgDom.css({position:"absolute","z-index":"100",left:"-15px"});
+				imgDom.addClass("tempImage");
+				$(this).append(imgDom);	
+							
+				//显示对应的内容
+				$(".hoverList"+i).css({"display":"block"});
+	 			//滑过商品列表
+	 			$(".hoverList"+i).mouseenter(function(){
+	 				$(".hoverList"+i).css({"display":"block"});
+	 				$("img").remove(".tempImage");	
+	 				
+	 			});
+	 			//鼠标离开对应区域
+	 			$(".hoverList"+i).mouseleave(function(){
+	 				isHover=false;
+	 				$(".hoverList"+i).css({"display":"none"});
+	 					//鼠标离开对应的区域，删除背景图片			
+				});	
+				
+			});
+			
+			$(this).mouseleave(function(){
+				$("img").remove(".tempImage");	
+				$(".hoverList"+i).css({"display":"none"});
+			});
+			
+		});
+	}
+};
+
+//滑过导航栏
+var navHover={
+	getFun:function(obj){
+		obj.mouseenter(function(){
+			this.style.color="#4bc7df";
+		});
+		obj.mouseleave(function(){
+			this.style.color="#333";
+		});
+	}
+};
+
+
+//加载
+$(function(){
+	//轮播图
+	let s = slideShow.getInstance($("#banner_SlideShow")[0],"100%",585,["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg"],3000,64,5,"#7a6e6e","#39bdfb");
 	s.initUI();
 	s.initEvent();
 	s.autoChange();
 	
-	let s1 = slideShow.getInstance($("img5"),"200px",250,["img/1_05060006574070434_240.jpg","img/1_05228577980827121_240.jpg","img/1_05228593650117456_240.jpg","img/9_05015996424113082_240.jpg"],3000);
+	let s1 = slideShow.getInstance($("#img5")[0],"200px",250,["img/1_05060006574070434_240.jpg","img/1_05228577980827121_240.jpg","img/1_05228593650117456_240.jpg","img/9_05015996424113082_240.jpg"],3000);
 	s1.initUI();
 	s1.initEvent();
 	s1.autoChange();
-}
+	
+	//滑过导航栏
+	navHover.getFun($(".nav a"));
+	
+	//首页首行滑过
+	HeaderHover.getFun();
+	
+	//滑过商品分类
+ 	hoverGoodsList.getFun();
+ 	//滑过头部
+ 	$(".a").each(function(i){
+// 		var that=this;
+ 		$(this).mouseenter(function(){
+ 			
+ 			if(this!=that){
+ 				$(that).css({display:"none"});
+ 			}
+ 			
+			$(".a"+i).css({display:"block"});
+			$(".a"+i).mouseenter(function(){
+				$(".a"+i).css({"display":"block"});
+			})
+			var that=this;
+		});
+		$(".a"+i).mouseleave(function(){
+			$(this).css({display:"none"});
+		})
+		
+ 	});
+ 	
+//	$(".a").mouseleave(function(){
+//		if($(this).hasClass("a")){
+//			$(this).next().css({display:"none"});
+//		}
+//	});
+//	
+
+	
+});
+

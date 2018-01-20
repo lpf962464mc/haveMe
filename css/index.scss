@@ -93,18 +93,33 @@ $headerColor:#999999;
         }
        .right{
              float: right;
+             position: relative;
              a{
                  display: block;
                  float: left;
                  color:$headerColor ;
                  margin-left:15px;
-                 text-align: center;
+                text-align: center;
+                
                  span{
                      margin-left: 5px;
+                     position: relative;
+                     z-index: 999;
+                     img{
+                         position: relative;
+                         left:4px;
+                         top :-2px;
+                         &:last-child{
+                             display: none;
+                         }
+                     }
                  }
+                
+               
              }
+
              p{
-                 float: left;
+                 float: right;
                  color:$headerColor;   
                  width: 80px;
                  padding:0 0 0 20px;  
@@ -128,6 +143,34 @@ $headerColor:#999999;
         
         }
     } 
+    
+    #indent,#collect, #customerService,#merchant{
+        position: absolute; 
+        background:white;
+        border:1px solid #f0f0f0 ;
+        border-top: none;
+        top:30px;
+        display: none;
+        li{
+            text-align: center;
+            width: 90px;
+        }
+    }
+    #indent{
+        left: 93px;    
+    }
+    #collect{
+        position: absolute;
+        left: 190px;
+    }
+    #customerService{
+        position: absolute;
+        left: 287px;
+    }
+    #merchant{
+        position: absolute;
+        left: 384px;
+    }
 }
 //logo图
 .log{
@@ -273,32 +316,41 @@ $headerColor:#999999;
                 width:212px ;
                 line-height: 40px;
                 height: 40px;
-                a{
-                    font-size: 14px;
-                    color: white;
+                position:relative ;
+                z-index: 1;
+                span{
+                    z-index: 999;
+                    position: relative;
+                    a{
+                        font-size: 14px;
+                        color: white;   
+                    }
+                    img{
+                        width: 16px;
+                        margin-right: 10px;
+                    }   
                 }
-                img{
-                    width: 16px;
-                    margin-right: 10px;
-                }
+                
             }
             ul li:first-child{
                 margin-top: 15px;
             }
         }
          .banner_con_center{
+             display: block;
             height: 485px;
             width: 773px;
             position: absolute;
             left:212px;
 //          top: -585px;
-            z-index: 999;
-            a{
-              display: block;
-              height:485px;
-              width: 773px;
-              z-index: 9; 
-            }
+//          z-index: 999;
+            opacity: 0;
+//          a{
+//            display: block;
+//            height:485px;
+//            width: 773px;
+//            z-index: 9; 
+//          }
         }
         .banner_con_right{
             height: 585px;
@@ -319,9 +371,109 @@ $headerColor:#999999;
             }   
         }
     }
-
 }
 
+//滑过商品列表
+.hoverList0,.hoverList1,.hoverList2,.hoverList3{
+            height: 585px;
+            width: 988px;
+            position: absolute;
+            left: 0;
+            top:0;
+            left: 212px;
+            display: none;
+            background: white;
+            .hoverList_left{
+                width: 755px;
+                height: 585px;
+                float: left;
+                .head{
+                    ul li{
+                     height:20px;
+                     line-height: 20px;
+                     float: left;
+                     text-align: center;
+                     background: #e2e4e3;
+                     margin-top: 20px;
+                     margin-left: 28px;
+                     border-radius: 5px;
+                     padding:3px;
+                     a{
+                         color: #816e60;
+                         font-size: 12px;
+                        }
+                    } 
+                 }
+                 .body{
+                     overflow: hidden;
+                     clear: both;
+                     padding-top: 20px;
+                     .left{
+                         float: left;
+                         h4{
+                             color: #445b63;
+                             float: left;
+                             margin-left: 60px;
+                             margin-right: 15px;
+                         } 
+                     }
+                     .right{
+                         float: left;
+                         margin-left: 25px;
+                         width: 590px;
+                         padding-bottom: 10px;
+                         border-bottom: 1px dashed #ebebeb;
+                         a{
+                             color: #767070;
+                             font-size: 12px;
+                             margin-right: 10px;
+                             span{
+                                 margin-right: 10px;
+                                 color: #767070;
+                             }
+                         }
+                     }
+                 }
+                 
+            }
+            .hoverList_right{
+                width: 213px;
+                height: 565px;
+                float: left;
+                padding-top: 20px;
+                padding-left: 20px;
+                ul li{
+                    float: left;
+                    width: 95px;
+                    height: 35px;
+                    border:1px solid #7A6E6E;
+                    margin-bottom: 3px;
+                    img{
+                        width:95px;
+                        height: 35px;
+                    }
+                }
+                ul li:nth-child(9){
+                    width: 190px;
+                    height: 150px;
+                    border:1px solid #7A6E6E;
+                    img{
+                        width: 190px;
+                        height: 150px;
+                    }
+                }
+                ul li:nth-child(10){
+                   width: 190px;
+                    height: 150px;
+                    border:1px solid #7A6E6E;
+                    img{
+                        width: 190px;
+                         height: 150px;;
+                    }
+                }
+                
+            }
+        }  
 //discount折扣区
 .discount{
     width: 100%;
