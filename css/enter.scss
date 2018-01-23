@@ -62,7 +62,7 @@ a{
         position: relative;
         .banner_con_right{
             height: 450px;
-            width: 480px;
+            width: 530px;
             border-radius: 10px;
             background: white;
             float: right;
@@ -81,31 +81,27 @@ a{
                     width: 220px;
                     padding-bottom: 20px;
                     border-bottom: 1px solid #e6e6e6;
+                    font-size: 18px;
+                    color: #999999;
+                    cursor: pointer;
                 }
                 span:first-child{
                    border-bottom:4px solid #f32613 ; 
-                }
-                a{
-                    font-size: 18px;
-                    color: #999999;
-                }
-                a:first-child{
-                    color: #f32613;
+                   color: #f32613;
                 }
                 i{
                     border-color: #F32613 transparent transparent transparent;
                     border-style: solid dashed dashed dashed;
                     border-width: 7px;
-//                  display: none;
                     width: 0;
                     height: 0;
                     position: absolute;
                     top:70px;
-                    right: 384px;
+                    right: 435px;
                 }
             }
             .text,.pass,.checkMa{
-                width: 350px;
+                width: 400px;
                 height: 50px;
                 border: 1px solid #e6e6e6;
                 border-bottom: none;
@@ -118,7 +114,7 @@ a{
                 input{
                    // display: block;
                    height: 47px;
-                    width: 260px;
+                    width: 310px;
                     border: none;
                     font-size: 16px;
                 }
@@ -133,7 +129,7 @@ a{
                     float: left;
                 }
                 input{
-                    width: 150px;
+                    width: 228px;
                     float: left;
                     line-height:45px;
                 }
@@ -141,12 +137,12 @@ a{
                     display: block;
                     float: left;
                     background: black;
-                    width: 123px;
+                    width: 95px;
                     height: 50px;
                 }
             }
             .seven_div{
-                width: 350px;
+                width: 400px;
                 height: 50px;
                 margin-left: 62px;
                 line-height: 50px;
@@ -164,7 +160,7 @@ a{
             }
             .enter{
                 display: block;
-                 width: 350px;
+                 width: 400px;
                 height: 50px;
                 margin-left: 62px;
                 line-height: 50px;
@@ -173,6 +169,89 @@ a{
                 font-size: 20px;
                 color: white;
                 border-radius: 5px;
+                border: none;
+                cursor: pointer;
+            }
+//          //用户名登录
+//          .usenameEnter{
+//              display: none;
+//          }
+            // 手机登录
+            .phoneEnter{
+                padding-left: 60px;
+                display: none;
+                ul li{
+                    width:395px;
+                    height: 50px;
+                    border: 1px solid #e1e1e1;
+                    font-size: 12px;
+                    line-height: 50px;
+                    text-indent: 10px;
+                    input{
+                        border: none;
+                        z-index: 10px;
+                        height: 46px;
+                        width: 304px;
+                    }
+                    span{
+                        font-size: 16px;
+                        color: #676767; 
+                    }
+                    span:nth-child(2){
+                        margin-right: 20px;
+                    }
+                    
+                }
+                ul li:nth-child(2){
+                     border-top: none;
+                     margin-bottom: 15px;
+                     input{
+                         width: 200px;
+                     }
+                     label{
+                         display: block;
+                         width: 95px;
+                         height: 50px;
+                         background: red;
+                         float: right;
+                     }
+                }
+                ul li:nth-child(3){
+                     border: none;
+                     line-height: 23px;
+                     text-indent: 0;
+                     span{
+                         background: #2aaf84;
+                         a{
+                             font-size: 12px;
+                             color: white;
+                         }
+                     }
+                }
+                ul li:nth-child(4){
+                    margin-top: 20px;
+                   margin-bottom: 20px;
+                     line-height: 50px;
+                     input{
+                         width: 200px;
+                     }
+                     label{
+                         display: block;
+                         width: 95px;
+                         height: 50px;
+                         background: red;
+                         float: right;
+                     }
+                }
+                ul li:nth-child(5){
+                    background: #f32613;
+                    border: none;
+                    line-height: 46px;
+                    cursor: pointer;
+                    text-align: center;
+                    color: white;
+                    font-size: 18px;
+                }
             }
         }
         

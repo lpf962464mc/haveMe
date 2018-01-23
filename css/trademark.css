@@ -1,0 +1,99 @@
+.trademark_con_nav {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background: #f6f6f6; }
+  .trademark_con_nav div {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto; }
+    .trademark_con_nav div img {
+      margin-right: 10px; }
+    .trademark_con_nav div span:first-child {
+      color: #6e7877; }
+    .trademark_con_nav div span:last-child {
+      color: #95999a;
+      font-size: 12px; }
+
+.trademark {
+  width: 100%;
+  background: #f6f6f6;
+  padding-bottom: 20px; }
+  .trademark .trademark_con {
+    width: 1180px;
+    margin: auto;
+    padding: 10px;
+    background: white;
+    position: relative; }
+    .trademark .trademark_con .allKinds {
+      width: 100%;
+      height: 30px;
+      border-bottom: 1px solid #cdcdcd;
+      border-top: 1px solid #cdcdcd;
+      line-height: 30px;
+      margin-bottom: 10px; }
+      .trademark .trademark_con .allKinds a {
+        display: block;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #777580;
+        padding: 0 15px 0 15px; }
+      .trademark .trademark_con .allKinds a:first-child:hover {
+        color: #c9340c; }
+      .trademark .trademark_con .allKinds a:last-child:hover {
+        color: #c9340c; }
+      .trademark .trademark_con .allKinds a:nth-child(2) {
+        background: #e4dbde;
+        color: #c9340c;
+        font-weight: 800; }
+    .trademark .trademark_con ul li {
+      width: 170px;
+      height: 85px;
+      border: 1px solid #e6e6e8;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      float: left; }
+      .trademark .trademark_con ul li img {
+        width: 150px;
+        margin: 10px 10px 0 10px; }
+      .trademark .trademark_con ul li p {
+        width: 150px;
+        margin: 0 10px 0 10px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-top: 1px solid #E6E6E8;
+        font-size: 12px;
+        color: #353624; }
+    .trademark .trademark_con .trademarkList {
+      width: 1200px;
+      clear: both;
+      overflow: hidden;
+      padding-left: 10px; }
+      .trademark .trademark_con .trademarkList ul li {
+        height: 95px;
+        width: 95px;
+        text-align: center;
+        line-height: 90px;
+        background: #fafafa;
+        margin-right: 30px;
+        border: 1px solid #d7d7d7;
+        cursor: pointer;
+        color: #2d3834;
+        font-size: 12px; }
+      .trademark .trademark_con .trademarkList ul li:first-child {
+        background: #da3700;
+        color: white; }
+    .trademark .trademark_con .trademarkList_box {
+      position: relative;
+      height: 570px; }
+      .trademark .trademark_con .trademarkList_box .trademarkList_0, .trademark .trademark_con .trademarkList_box .trademarkList_1 {
+        border: 1px solid #767070;
+        padding: 15px 0 15px 15px;
+        position: absolute;
+        display: none; }
+      .trademark .trademark_con .trademarkList_box .trademarkList_0 {
+        display: block; }

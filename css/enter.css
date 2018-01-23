@@ -54,7 +54,7 @@ a {
     position: relative; }
     .banner .banner_con .banner_con_right {
       height: 450px;
-      width: 480px;
+      width: 530px;
       border-radius: 10px;
       background: white;
       float: right;
@@ -72,13 +72,12 @@ a {
           float: left;
           width: 220px;
           padding-bottom: 20px;
-          border-bottom: 1px solid #e6e6e6; }
-        .banner .banner_con .banner_con_right .title span:first-child {
-          border-bottom: 4px solid #f32613; }
-        .banner .banner_con .banner_con_right .title a {
+          border-bottom: 1px solid #e6e6e6;
           font-size: 18px;
-          color: #999999; }
-        .banner .banner_con .banner_con_right .title a:first-child {
+          color: #999999;
+          cursor: pointer; }
+        .banner .banner_con .banner_con_right .title span:first-child {
+          border-bottom: 4px solid #f32613;
           color: #f32613; }
         .banner .banner_con .banner_con_right .title i {
           border-color: #F32613 transparent transparent transparent;
@@ -88,9 +87,9 @@ a {
           height: 0;
           position: absolute;
           top: 70px;
-          right: 384px; }
+          right: 435px; }
       .banner .banner_con .banner_con_right .text, .banner .banner_con .banner_con_right .pass, .banner .banner_con .banner_con_right .checkMa {
-        width: 350px;
+        width: 400px;
         height: 50px;
         border: 1px solid #e6e6e6;
         border-bottom: none;
@@ -100,7 +99,7 @@ a {
           margin-left: 20px; }
         .banner .banner_con .banner_con_right .text input, .banner .banner_con .banner_con_right .pass input, .banner .banner_con .banner_con_right .checkMa input {
           height: 47px;
-          width: 260px;
+          width: 310px;
           border: none;
           font-size: 16px; }
       .banner .banner_con .banner_con_right .pass {
@@ -111,17 +110,17 @@ a {
         .banner .banner_con .banner_con_right .checkMa span {
           float: left; }
         .banner .banner_con .banner_con_right .checkMa input {
-          width: 150px;
+          width: 228px;
           float: left;
           line-height: 45px; }
         .banner .banner_con .banner_con_right .checkMa li {
           display: block;
           float: left;
           background: black;
-          width: 123px;
+          width: 95px;
           height: 50px; }
       .banner .banner_con .banner_con_right .seven_div {
-        width: 350px;
+        width: 400px;
         height: 50px;
         margin-left: 62px;
         line-height: 50px; }
@@ -134,7 +133,7 @@ a {
           float: right; }
       .banner .banner_con .banner_con_right .enter {
         display: block;
-        width: 350px;
+        width: 400px;
         height: 50px;
         margin-left: 62px;
         line-height: 50px;
@@ -142,7 +141,69 @@ a {
         text-align: center;
         font-size: 20px;
         color: white;
-        border-radius: 5px; }
+        border-radius: 5px;
+        border: none;
+        cursor: pointer; }
+      .banner .banner_con .banner_con_right .phoneEnter {
+        padding-left: 60px;
+        display: none; }
+        .banner .banner_con .banner_con_right .phoneEnter ul li {
+          width: 395px;
+          height: 50px;
+          border: 1px solid #e1e1e1;
+          font-size: 12px;
+          line-height: 50px;
+          text-indent: 10px; }
+          .banner .banner_con .banner_con_right .phoneEnter ul li input {
+            border: none;
+            z-index: 10px;
+            height: 46px;
+            width: 304px; }
+          .banner .banner_con .banner_con_right .phoneEnter ul li span {
+            font-size: 16px;
+            color: #676767; }
+          .banner .banner_con .banner_con_right .phoneEnter ul li span:nth-child(2) {
+            margin-right: 20px; }
+        .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(2) {
+          border-top: none;
+          margin-bottom: 15px; }
+          .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(2) input {
+            width: 200px; }
+          .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(2) label {
+            display: block;
+            width: 95px;
+            height: 50px;
+            background: red;
+            float: right; }
+        .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(3) {
+          border: none;
+          line-height: 23px;
+          text-indent: 0; }
+          .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(3) span {
+            background: #2aaf84; }
+            .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(3) span a {
+              font-size: 12px;
+              color: white; }
+        .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(4) {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 50px; }
+          .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(4) input {
+            width: 200px; }
+          .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(4) label {
+            display: block;
+            width: 95px;
+            height: 50px;
+            background: red;
+            float: right; }
+        .banner .banner_con .banner_con_right .phoneEnter ul li:nth-child(5) {
+          background: #f32613;
+          border: none;
+          line-height: 46px;
+          cursor: pointer;
+          text-align: center;
+          color: white;
+          font-size: 18px; }
     .banner .banner_con .div_jt {
       height: 20px;
       width: 20px;

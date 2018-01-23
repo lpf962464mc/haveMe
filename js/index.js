@@ -129,9 +129,6 @@ var slideShow=(function(){
 		//把当前的变成红色
 		lis[inord].style.backgroundColor=this.btnHighColor;
 	};
-	
-	
-
 	//3、跳转到指定的图片上
 	this.goImg=function(transOrd){//0
 		outord = this.ord;//ord改变之前的ord就是要出去的ord
@@ -150,71 +147,10 @@ var slideShow=(function(){
 	}
 })();
 
-//首页首行滑过
-var HeaderHover={
-	getFun:function(){
-		$("#header_right a").mouseenter(function(){
-//			$("#a").css({"display":"bolck"});
-
-		});
-	}
-};
-
-//滑过商品分类
-var hoverGoodsList={
-	getFun:function(obj){
-	//滑过列表
-		$(".banner_con_left ul li").each(function(i){
-			//添加一个背景图片
-			$(this).mouseenter(function(){
-				
-				var imgDom=$("<img>");
-				imgDom.attr({src:"img/index_nav_arrow.png"});
-				imgDom.css({position:"absolute","z-index":"100",left:"-15px"});
-				imgDom.addClass("tempImage");
-				$(this).append(imgDom);	
-							
-				//显示对应的内容
-				$(".hoverList"+i).css({"display":"block"});
-	 			//滑过商品列表
-	 			$(".hoverList"+i).mouseenter(function(){
-	 				$(".hoverList"+i).css({"display":"block"});
-	 				$("img").remove(".tempImage");	
-	 				
-	 			});
-	 			//鼠标离开对应区域
-	 			$(".hoverList"+i).mouseleave(function(){
-	 				isHover=false;
-	 				$(".hoverList"+i).css({"display":"none"});
-	 					//鼠标离开对应的区域，删除背景图片			
-				});	
-				
-			});
-			
-			$(this).mouseleave(function(){
-				$("img").remove(".tempImage");	
-				$(".hoverList"+i).css({"display":"none"});
-			});
-			
-		});
-	}
-};
-
-//滑过导航栏
-var navHover={
-	getFun:function(obj){
-		obj.mouseenter(function(){
-			this.style.color="#4bc7df";
-		});
-		obj.mouseleave(function(){
-			this.style.color="#333";
-		});
-	}
-};
-
 
 //加载
 $(function(){
+	
 	//轮播图
 	let s = slideShow.getInstance($("#banner_SlideShow")[0],"100%",585,["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg"],3000,64,5,"#7a6e6e","#39bdfb");
 	s.initUI();
@@ -234,34 +170,24 @@ $(function(){
 	
 	//滑过商品分类
  	hoverGoodsList.getFun();
- 	//滑过头部
- 	$(".a").each(function(i){
-// 		var that=this;
- 		$(this).mouseenter(function(){
- 			
- 			if(this!=that){
- 				$(that).css({display:"none"});
- 			}
- 			
-			$(".a"+i).css({display:"block"});
-			$(".a"+i).mouseenter(function(){
-				$(".a"+i).css({"display":"block"});
-			})
-			var that=this;
-		});
-		$(".a"+i).mouseleave(function(){
-			$(this).css({display:"none"});
-		})
-		
- 	});
  	
-//	$(".a").mouseleave(function(){
-//		if($(this).hasClass("a")){
-//			$(this).next().css({display:"none"});
-//		}
-//	});
-//	
+	//滑过头部
+	headerHover.getFun();
 
 	
+	//回到顶部
+	ScrollTop.returnTop($("#returnTop"));
+	ScrollTop.clickReturn($("#returnTop"));
+	ScrollTop.overReturn($("#returnTop"));
+	//滑过右边侧边栏
+	ScrollTop.overFixedCon0($("#fixed_right_con ul li").eq(0));
+	ScrollTop.overFixedCon1($("#fixed_right_con ul li").eq(1));
+	ScrollTop.overFixedCon2($("#fixed_right_con ul li").eq(2));
+	ScrollTop.overFixedCon3($("#fixed_right_con ul li").eq(3));
+
+	
+	//点击购物车图标显示，购物车信息
+	 goodsCar.getFun();
+	 goodsCar.getFun1();
 });
 

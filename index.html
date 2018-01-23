@@ -4,32 +4,77 @@
 <meta charset="UTF-8">
 <title></title>
 </head>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <body>
 	
-	<!--侧边栏悬浮-->
-	<div class="fixed">
-		<div class="fixed_right">
-			
-		</div>
-		<div class="fixed_con">
-			<a href=""><span></span></a>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>		
-		</div>
-		<div id="returnTop">	
-		</div>
+<!--左侧边栏悬浮-->
+<div id="leftFixed">
+	<ul>
+		<li><a href="#F1">1F</a></li>
+		<li><a href="#F2">2F</a></li>
+		<li><a href="#F3">3F</a></li>
+		<li><a href="#F4">4F</a></li>
+		<li><a href="#F5">5F</a></li>
+		<li><a href="#F6">6F</a></li>
+		<li><a href="#F7">7F</a></li>
+	</ul>
+</div>
+
+<!--右侧边栏悬浮-->
+<div class="fixed">
+	<div class="fixed_right">
 	</div>
+	<div class="fixed_con" id="fixed_right_con">
+		<ul>
+			<li>
+				<a href=""></a>
+				<p>会员登录</p>
+			</li>
+			<li id="shopingCar">
+				<a href=""></a>
+				<p>购物车</p>
+			</li>
+			<li>
+				<a href=""></a>
+				<p>在线联系</p>
+			</li>
+			<li>
+				<a href=""></a>
+				<p>商品对比</p>
+			</li>
+		</ul>
+	</div>
+
+	<!--//返回顶部-->
+	<div id="returnTop">
+		<span id="">		
+		</span>
+		<p>
+			返回顶部
+		</p>
+	</div>
+</div>
+
+<!--右侧购物车固定-->
+<div id="goodsCar_con">
+	<p>我的购物车<span></span></p>
+	<h3>暂无商品</h3>
+	<!--购物车中的商品-->
+	<ul id=""goodsList>
+		<li></li>
+	</ul>
+</div>
 	<!--//首页头-->
 	<div class="header">
 		<div class="tit">
 			<div class="left"> 
 				<p >您好，欢迎来到有我！</p>
-				<a href="#" target="_blank" class="register">[登录]</a>
-				<a href="#" target="_blank" class="login">[注册]</a>
+				<a href="enter.html" target="_blank" class="register">[登录]</a>
+				<a href="register.html" target="_blank" class="login">[注册]</a>
 			</div>
 			<div class="right" id="header_right">
 				
@@ -62,15 +107,25 @@
 					<li><a href="#">门店登录</a></li>
 					<li><a href="#">商家入驻</a></li>
 				</ul>
-				
-				<p class='p3'>app下载</p>
-				<p class='p2'>手机版<span>|</span></p>
-				<p class='p1'>关注我们 <span>|</span></p>
-				
-				
-				
-				
-				
+			
+				<ul id="tit_mes">
+					<li><p class='p1'>关注我们 <span>|</span>
+						<div class="p1">
+							<p>关注商城微信号</p>
+						</div>
+					</li>
+					<li>手机版<span>|</span>
+						<div>
+							<p>手机登录</p>
+						</div>
+					</li>
+					<li>app下载	
+						<div>
+							<p>求下载</p>
+						</div>
+					</li>
+				</ul>
+			
 			</div>
 		</div>
 	</div>
@@ -117,7 +172,7 @@
 			</div>
 			<ul>
 				<li ><a href="#">首页</a></li>
-				<li><a href="#">品牌</a></li>
+				<li><a href="trademark.html">品牌</a></li>
 				<li><a href="#">限时折扣</a></li>
 				<li><a href="#">礼品摆件</a></li>
 				<li><a href="#">玩具动员</a></li>
@@ -578,7 +633,7 @@
 	</div>
 	
 	<!--商品展示1-->
-	<div class="goodsShow">
+	<div class="goodsShow" id="F1">
 		<div class="goodsShow_con">
 			<div class="goodsShow_tit">
 				<div class="goodsShow_tit_left">
