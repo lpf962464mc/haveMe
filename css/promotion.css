@@ -41,19 +41,24 @@
           border: 5px solid transparent;
           border-top: 5px solid #d7210c; }
     .promotion .promotion_con .promotion_con_goodsList {
-      width: 1200x;
+      width: 1200px;
       margin: 10px 0;
+      position: relative;
       overflow: hidden; }
       .promotion .promotion_con .promotion_con_goodsList div {
         width: 280px;
         padding: 10px 7px  0px 8px;
-        float: left; }
+        float: left;
+        position: absolute;
+        overflow: hidden; }
         .promotion .promotion_con .promotion_con_goodsList div ul {
           border: 1px solid #e6e6e6; }
           .promotion .promotion_con .promotion_con_goodsList div ul li {
             padding-left: 15px; }
         .promotion .promotion_con .promotion_con_goodsList div ul li:first-child {
           text-align: center; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:first-child img {
+            width: 240px; }
         .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(2) {
           position: relative; }
           .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(2) a {

@@ -53,13 +53,17 @@
         }
         //商品列表
         .promotion_con_goodsList{
-            width: 1200x;
+            width: 1200px;
             margin: 10px 0;
+            position: relative;
+//          height: 300px;
             overflow: hidden;
             div{
                 width: 280px;
                 padding: 10px 7px  0px 8px ;
                 float: left;
+                position:absolute;
+                overflow: hidden;
                 ul {
                     border:1px solid #e6e6e6;
                     li{
@@ -68,6 +72,9 @@
                 }
                 ul li:first-child{
                     text-align: center;
+                    img{
+                    width: 240px;
+                    }
                 }
                 ul li:nth-child(2){
                     position: relative;
@@ -101,7 +108,7 @@
                 ul li:nth-child(4){
                     margin-top: 15px;
                     overflow: hidden;
-                    div{
+                 div{
                         width: 80px;
                     }
                     p{
@@ -120,6 +127,7 @@
                         line-height: 30px;
                         margin-top: 15px;
                         margin-right: 20px;
+                        
                     }
                 }
                 ul li:nth-child(5){
@@ -143,5 +151,6 @@
                 
             }
         }
+        
     }
 }

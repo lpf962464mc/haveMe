@@ -1,0 +1,75 @@
+.shopStep{
+    float: right;
+    margin-top: 30px;
+    ul li{
+        float: left;
+        text-align: center;
+        font-size: 12px;
+        color: #d5cfcf;
+        border-top: 1px solid #d5cfcf;
+       width: 160px;
+       padding-top: 5px;
+       &:first-child{
+           color: #e40114;
+           border-color: #e40114;
+           span{
+               background: #e40114;
+               border-color: #e40114;
+           }
+       }
+       span{
+           display: block;
+           height: 8px;
+           width: 8px;
+           border: 1px solid #d5cfcf;
+           border-radius: 50%;
+           position: relative;
+           top: -28px;
+           left: 75px;
+       }
+    }
+}
+
+
+//购物车
+.shoppingCar{
+    width: 100%;
+    background: #f6f6f6;
+    padding: 20px;
+    border-top: 2px solid #e40114;
+    .shoppingCar_con{
+        width: 1180px;
+        margin: 0 auto;
+        padding: 10px;
+        background: white;
+        .tit{
+            border-top: 1px solid #f7f7f7;
+            padding-top: 15px;
+            h3{
+            font-size: 24px;
+            color: #4a5858;
+            font-weight: 100;
+             }
+            p{
+                color: #a6acac;
+                font-size: 12px;
+            }
+        }
+        .shopNav{
+            color: #61696b;
+            font-size: 12px;
+            margin-top: 20px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 15px;
+            background: #fafafa;
+            input{
+                height: 12px;
+                width: 12px;
+            }
+            span:nth-child(1){
+                margin-left: 340px;
+            }
+        }
+    }
+}
