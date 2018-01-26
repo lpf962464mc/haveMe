@@ -1,8 +1,7 @@
 <?php
-header("content-type","text/html;charset=utf-8");
+    header("content-type","text/html;charset=utf-8");
     //一、接收前端数据
-    $username = $_POST['username'];
-    $userpass = $_POST['userpass'];
+    $username = $_GET['username'];
 
     //二、处理
 
@@ -14,7 +13,7 @@ header("content-type","text/html;charset=utf-8");
 
     //3、数据库操作
     //3.1查找用户名是否存在
-    $sqlStr="select * from vip where usename='".$username."' and usepass='".$userpass."'";
+    $sqlStr="select * from vip where usename='".$username."'";
     $result = mysql_query($sqlStr,$conn);
     //行数;
     $rows = mysql_num_rows($result);
@@ -22,9 +21,5 @@ header("content-type","text/html;charset=utf-8");
     mysql_close($conn);
 
     //三、响应
-    if($rows==0){
-        echo "0";
-    }else{
-        echo "1";
-    }
+    echo $rows;
 ?>

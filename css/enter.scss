@@ -60,6 +60,7 @@ a{
         width: 1100px;
         margin: 0 auto;
         position: relative;
+        
         .banner_con_right{
             height: 450px;
             width: 530px;
@@ -107,6 +108,7 @@ a{
                 border-bottom: none;
                 margin-left: 62px;
                 line-height: 50px;
+                position: relative;
                 span{
                     margin-left: 20px;
                     
@@ -172,10 +174,11 @@ a{
                 border: none;
                 cursor: pointer;
             }
-//          //用户名登录
-//          .usenameEnter{
-//              display: none;
-//          }
+            //用户名登录
+            .usenameEnter{
+                display: block;
+                position: absolute;
+            }
             // 手机登录
             .phoneEnter{
                 padding-left: 60px;

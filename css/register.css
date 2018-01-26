@@ -112,7 +112,8 @@ a {
         width: 300px;
         font-size: 14px;
         color: #D1D1D1;
-        height: 48px; }
+        height: 48px;
+        outline: none; }
     .banner .banner_con .checkMa, .banner .banner_con .phoneCheck {
       width: 400px;
       height: 55px;
@@ -131,7 +132,8 @@ a {
         height: 54px;
         width: 200px;
         float: left;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        outline: none; }
       .banner .banner_con .checkMa li, .banner .banner_con .phoneCheck li {
         display: block;
         float: right;
@@ -155,6 +157,61 @@ a {
       color: white;
       border-radius: 5px;
       margin-top: 15px; }
+    .banner .banner_con .phoneRegister {
+      position: absolute; }
+    .banner .banner_con .numRegister {
+      padding-left: 118px;
+      display: none; }
+      .banner .banner_con .numRegister ul li {
+        width: 395px;
+        height: 50px;
+        border: 1px solid #e1e1e1;
+        font-size: 12px;
+        line-height: 50px;
+        border-bottom: none;
+        position: relative; }
+        .banner .banner_con .numRegister ul li span {
+          display: block;
+          width: 70px;
+          height: 50px;
+          float: left; }
+        .banner .banner_con .numRegister ul li span:first-child {
+          font-size: 14px;
+          color: #333333;
+          margin-left: 20px; }
+        .banner .banner_con .numRegister ul li input {
+          outline: none;
+          border: none;
+          text-indent: 10px;
+          width: 300px; }
+      .banner .banner_con .numRegister ul li:nth-child(4) {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e1e1e1; }
+      .banner .banner_con .numRegister ul li:nth-child(5) input, .banner .banner_con .numRegister ul li:nth-child(7) input {
+        width: 180px; }
+      .banner .banner_con .numRegister ul li:nth-child(5) label, .banner .banner_con .numRegister ul li:nth-child(7) label {
+        display: block;
+        float: right;
+        height: 50px;
+        width: 125px;
+        background: red; }
+      .banner .banner_con .numRegister ul li:nth-child(7) {
+        border-bottom: 1px solid #e1e1e1; }
+      .banner .banner_con .numRegister ul li:nth-child(8) {
+        border: none; }
+        .banner .banner_con .numRegister ul li:nth-child(8) input {
+          width: 25px;
+          vertical-align: middle;
+          margin-right: 15px; }
+      .banner .banner_con .numRegister ul li:last-child {
+        border-bottom: 1px solid #e1e1e1;
+        background: #f32613;
+        line-height: 50px;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px; }
     .banner .banner_con .banner_con_right {
       width: 235px;
       height: 520px;

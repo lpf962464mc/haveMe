@@ -10,6 +10,12 @@ gulp.task("copyHtml",function(){
 
 });
 
+////添加copyPHP任务,保存到指定目录
+gulp.task("copyPhp",function(){
+	gulp.src("*.php").pipe(gulp.dest("D:/phpStudy/WWW/haveMe"));
+
+});
+
 //添加copyImg任务，保存到指定目录
 gulp.task("copyImg",function(){
 	gulp.src("img/**/*").pipe(gulp.dest("D:/phpStudy/WWW/haveMe/img"));
@@ -36,6 +42,7 @@ gulp.task("sass",function(){
 
 //添加自动监听任务功能
 gulp.task("watch",function(){
+	gulp.watch("*.php",["copyPhp"]);
 	gulp.watch("*.html",["copyHtml"]);
 	gulp.watch("img/**/*",["copyImg"]);
 	gulp.watch("css/**.scss",["sass"]);

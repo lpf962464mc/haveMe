@@ -1,0 +1,281 @@
+.details_con_nav {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background: #f6f6f6; }
+  .details_con_nav div {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto; }
+    .details_con_nav div img {
+      margin-right: 10px; }
+    .details_con_nav div a {
+      font-size: 14px;
+      color: #7d7c77; }
+      .details_con_nav div a:hover {
+        color: #cd000b; }
+    .details_con_nav div span {
+      font-size: 12px;
+      color: #9a99a9; }
+
+.details_con {
+  width: 100%;
+  overflow: hidden; }
+  .details_con .details_con_goods {
+    width: 1190px;
+    padding: 5px;
+    background: white;
+    margin: 0 auto; }
+    .details_con .details_con_goods .details_con_goods_top {
+      height: 480px;
+      width: 1190px;
+      padding: 5px; }
+      .details_con .details_con_goods .details_con_goods_top .left {
+        float: left;
+        height: 460px;
+        width: 350px;
+        border: 1px solid #eeeeee;
+        border-right: none; }
+        .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(1) {
+          position: relative;
+          text-align: center;
+          width: 300px;
+          height: 300px;
+          background-image: url(../img/1_05452215863503576_360.jpg);
+          background-size: 300px 300px; }
+          .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(1) #bigMirror {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            width: 155px;
+            height: 155px;
+            background-color: red;
+            opacity: 0.4;
+            display: none; }
+          .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(1) #show {
+            position: absolute;
+            left: 370px;
+            top: 0px;
+            width: 465px;
+            height: 465px;
+            border: 1px solid black;
+            overflow: hidden;
+            display: none; }
+        .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(2) {
+          margin-top: 5px;
+          padding-bottom: 10px;
+          border-bottom: 1px dashed #eee;
+          padding-left: 20px; }
+          .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(2) img {
+            margin-right: 5px;
+            border: 1px solid #eee;
+            cursor: pointer; }
+        .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(3) {
+          overflow: hidden;
+          padding: 25px; }
+          .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(3) a {
+            float: left;
+            margin-right: 5px;
+            border: 1px solid #eee;
+            padding: 5px;
+            border-radius: 5px;
+            color: #757a73;
+            font-size: 12px; }
+            .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(3) a:hover {
+              background: #f3f3f3; }
+          .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(3) a:last-child {
+            float: right; }
+          .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(3) span {
+            border: 1px solid #eee;
+            border-radius: 5px;
+            float: left;
+            color: #757a73;
+            font-size: 12px;
+            padding: 5px; }
+            .details_con .details_con_goods .details_con_goods_top .left ul li:nth-child(3) span:hover {
+              background: #f3f3f3; }
+      .details_con .details_con_goods .details_con_goods_top .center {
+        float: left;
+        height: 470px;
+        width: 590px;
+        border: 1px solid #eeeeee;
+        border-right: none;
+        padding: 5px; }
+        .details_con .details_con_goods .details_con_goods_top .center h3 {
+          padding-left: 25px;
+          height: 50px;
+          line-height: 50px; }
+        .details_con .details_con_goods .details_con_goods_top .center div {
+          height: 360px;
+          width: 530px;
+          background: #f3f3f3;
+          padding: 30px; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li {
+            line-height: 35px;
+            color: #394144; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:first-child span:last-child {
+            color: #324a54;
+            font-weight: 800;
+            text-decoration: line-through; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(2) span {
+            color: #d61b24; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(2) span:nth-child(1) {
+            font-size: 20px;
+            margin-right: 10px; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(3) img:first-child {
+            margin-left: 8px; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(3) span {
+            font-size: 12px;
+            color: #b9b4b1;
+            margin-left: 20px; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(3) span span {
+              color: #d72437;
+              margin-left: 0;
+              font-size: 18px; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(4) {
+            border-bottom: 1px dashed #324A54;
+            padding-bottom: 15px; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(4) span:nth-child(2) {
+              margin-left: 5px;
+              color: #353849; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(4) span:nth-child(3) {
+              color: #5f5355; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(5) {
+            height: 47px;
+            line-height: 47px;
+            border-bottom: 1px dashed #324A54; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(5) span {
+              float: left; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(5) .provinceAndCity {
+              float: left;
+              height: 30px;
+              width: 130px;
+              border: 1px solid #e6e6e6;
+              margin-left: 10px;
+              margin-top: 10px;
+              cursor: pointer;
+              font-size: 12px;
+              line-height: 30px;
+              background: white;
+              text-indent: 5px; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(5) span:nth-child(3) {
+              color: #363636;
+              font-size: 18px;
+              margin: 0 15px;
+              font-weight: 700; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(5) span:nth-child(4) {
+              color: #8f99a3;
+              font-size: 12px; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(6) {
+            height: 66px; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(6) span {
+              display: block;
+              float: left;
+              margin-top: 20px; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(6) span:nth-child(2) {
+              font-size: 14px;
+              color: #f52312;
+              width: 60px;
+              height: 30px;
+              border: 2px solid #f52312;
+              line-height: 30px;
+              text-indent: 30px;
+              background: url(../img/1_05452215863503576_60.jpg) no-repeat;
+              background-size: 30px 30px; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(7) {
+            padding-top: 20px; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(7) span {
+              display: block;
+              float: left;
+              padding: 0 5px;
+              border: 2px solid #e3dadb; }
+              .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(7) span:hover {
+                border: 2px solid #f52312; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(7) span:nth-child(1) {
+              border: none; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(7) span:nth-child(2) {
+              margin: 0 10px; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(7) span:nth-child(3) {
+              margin-right: 10px; }
+          .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(8) {
+            clear: both;
+            padding-top: 10px; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(8) span {
+              display: block;
+              float: left; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(8) span:nth-child(1) {
+              height: 46px;
+              width: 66px;
+              border: 1px solid #445B63; }
+              .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(8) span:nth-child(1) .one {
+                height: 46px;
+                width: 46px;
+                background: white;
+                float: left;
+                border: none;
+                text-align: center;
+                line-height: 46px; }
+              .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(8) span:nth-child(1) .two {
+                height: 23px;
+                width: 19px;
+                background: #f4f2f7;
+                float: left;
+                border: none;
+                text-align: center;
+                line-height: 20px; }
+                .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(8) span:nth-child(1) .two a {
+                  display: block;
+                  border: 1px solid #e6e6e6;
+                  cursor: pointer; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(8) span:nth-child(2) {
+              width: 125px;
+              height: 40px;
+              background: #ed290f;
+              color: white;
+              line-height: 40px;
+              border-radius: 5px;
+              font-size: 16px;
+              text-align: center;
+              margin-left: 10px;
+              margin-right: 10px;
+              cursor: pointer; }
+            .details_con .details_con_goods .details_con_goods_top .center div ul li:nth-child(8) span:nth-child(3) {
+              width: 90px;
+              height: 40px;
+              border-radius: 5px;
+              color: white;
+              font-size: 16px;
+              line-height: 40px;
+              text-align: center;
+              background: #bc7533;
+              cursor: pointer; }
+      .details_con .details_con_goods .details_con_goods_top .right_look {
+        float: left;
+        height: 480px;
+        width: 230px;
+        border: 1px solid #eeeeee; }
+        .details_con .details_con_goods .details_con_goods_top .right_look h6 {
+          background: #f5f5f5;
+          height: 30px;
+          border-bottom: 1px solid #e6e6e6;
+          line-height: 30px;
+          text-indent: 10px;
+          font-size: 14px;
+          color: #675f6c; }
+        .details_con .details_con_goods .details_con_goods_top .right_look ul li {
+          font-size: 18px;
+          color: #cc332d;
+          float: left;
+          margin-bottom: 15px;
+          text-align: center;
+          height: 65px;
+          width: 95px;
+          padding: 10px; }
+          .details_con .details_con_goods .details_con_goods_top .right_look ul li span {
+            display: block; }
+          .details_con .details_con_goods .details_con_goods_top .right_look ul li img {
+            padding-left: 2px;
+            width: 60px;
+            border: 1px solid transparent; }
+            .details_con .details_con_goods .details_con_goods_top .right_look ul li img:hover {
+              border-color: #cc332d; }

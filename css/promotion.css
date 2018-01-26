@@ -1,0 +1,114 @@
+.promotion {
+  width: 100%;
+  background: #f6f6f6; }
+  .promotion .promotion_nav {
+    width: 1200px;
+    height: 45px;
+    margin: 0 auto;
+    line-height: 45px;
+    background: #f6f6f6; }
+  .promotion .promotion_con {
+    width: 1180px;
+    background: white;
+    margin: 0 auto;
+    padding: 10px 10px; }
+    .promotion .promotion_con .promotion_con_list {
+      border-bottom: 1px solid #d1d1d1;
+      border-top: 2px solid #d1d1d1;
+      height: 45px; }
+      .promotion .promotion_con .promotion_con_list ul li {
+        width: 70px;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        text-align: center; }
+        .promotion .promotion_con .promotion_con_list ul li a {
+          color: #363531;
+          font-size: 12px; }
+      .promotion .promotion_con .promotion_con_list ul li:first-child {
+        width: 80px;
+        height: 45px;
+        position: relative;
+        background: url(../img/fengqiangfenlei.png); }
+        .promotion .promotion_con .promotion_con_list ul li:first-child a {
+          color: white; }
+        .promotion .promotion_con .promotion_con_list ul li:first-child span {
+          position: absolute;
+          left: 35px;
+          bottom: -10px;
+          height: 0;
+          width: 0;
+          border: 5px solid transparent;
+          border-top: 5px solid #d7210c; }
+    .promotion .promotion_con .promotion_con_goodsList {
+      width: 1200x;
+      margin: 10px 0;
+      overflow: hidden; }
+      .promotion .promotion_con .promotion_con_goodsList div {
+        width: 280px;
+        padding: 10px 7px  0px 8px;
+        float: left; }
+        .promotion .promotion_con .promotion_con_goodsList div ul {
+          border: 1px solid #e6e6e6; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li {
+            padding-left: 15px; }
+        .promotion .promotion_con .promotion_con_goodsList div ul li:first-child {
+          text-align: center; }
+        .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(2) {
+          position: relative; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(2) a {
+            display: block;
+            height: 20px;
+            width: 200px;
+            color: #aeb1b8;
+            font-size: 12px;
+            overflow: hidden;
+            line-height: 20px;
+            position: relative; }
+        .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(3) {
+          margin-top: 15px; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(3) span:nth-child(1) {
+            color: #2e3547;
+            font-size: 12px; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(3) span:nth-child(2) {
+            color: #c3362c;
+            font-size: 20px; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(3) span:nth-child(3) {
+            color: #50a296;
+            font-size: 14px;
+            margin-left: 10px; }
+        .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(4) {
+          margin-top: 15px;
+          overflow: hidden; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(4) div {
+            width: 80px; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(4) p {
+            color: #2D3834;
+            font-size: 12px; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(4) a {
+            display: block;
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            background: #bf3c2a;
+            color: white;
+            float: right;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 15px;
+            margin-right: 20px; }
+        .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(5) {
+          margin-top: 15px;
+          border-top: 1px dashed #e5e5e5;
+          padding-top: 10px;
+          overflow: hidden; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(5) img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%; }
+          .promotion .promotion_con .promotion_con_goodsList div ul li:nth-child(5) p {
+            width: 180px;
+            font-size: 12px;
+            color: #8a948b;
+            float: right;
+            margin-right: 30px; }

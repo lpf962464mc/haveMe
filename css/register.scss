@@ -133,10 +133,10 @@ a{
                     font-size: 14px;
                     color: #D1D1D1;
                     height:  48px;
+                    outline: none;
                 }
                
-            }
-           
+        }
             .checkMa,.phoneCheck{
                 width: 400px;
                 height: 55px;
@@ -157,6 +157,7 @@ a{
                     width: 200px;
                     float: left;
                     box-sizing:border-box;
+                    outline: none;
                 }
                 li{
                     display: block;
@@ -186,6 +187,80 @@ a{
                 border-radius: 5px;
                 margin-top: 15px;
             }
+            //手机号码注册
+           .phoneRegister{
+//             display: none;
+               position: absolute;
+           }
+            //账号注册
+           .numRegister{
+                padding-left: 118px;
+                display: none;
+                ul li{
+                    width:395px;
+                    height: 50px;
+                    border: 1px solid #e1e1e1;
+                    font-size: 12px;
+                    line-height: 50px;
+                    border-bottom: none;
+                    position: relative;
+                    span{
+                        display: block;
+                        width: 70px;
+                        height: 50px;
+                        float: left;
+                    }
+                    span:first-child{
+                        font-size: 14px;
+                        color: #333333;
+                        margin-left: 20px;
+                    }
+                    
+                    input{
+                        outline: none;
+                        border:none;
+                        text-indent: 10px;
+                        width: 300px;
+                    }
+                } 
+                ul li:nth-child(4){
+                    margin-bottom:15px ;
+                    border-bottom: 1px solid #e1e1e1;
+                }
+                ul li:nth-child(5),ul li:nth-child(7){
+                    input{
+                        width: 180px;
+                    }
+                    label{
+                        display: block;
+                        float: right;
+                        height: 50px;
+                        width: 125px;
+                        background: red;
+                    }
+                }
+                ul li:nth-child(7){
+                    border-bottom: 1px solid #e1e1e1;
+                }
+                ul li:nth-child(8){
+                    border: none;
+                    input{
+                        width: 25px;
+                        vertical-align: middle;
+                        margin-right: 15px;
+                    }
+                }
+                ul li:last-child{
+                    border-bottom: 1px solid #e1e1e1;
+                    background: #f32613;
+                    line-height: 50px;
+                    color: white;
+                    font-size: 16px;
+                    text-align: center;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+           } 
              
         .banner_con_right{
             width: 235px;

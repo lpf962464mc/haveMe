@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/register.css"/>
+<script type="text/javascript"src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+	
+	
 </head>
 <body>
 <!--登录头部-->
@@ -30,31 +34,52 @@
 				<span><a href="#">账号注册</a></span>
 				<i></i>
 			</div>
-			<form action="" method="post">	
-				<div class="text">
-					<span>手机号:</span>
-					<input type="text" name="" id="" placeholder="请输入手机号" />
+			
+			<!--手机注册-->
+			<form action="egsave.php" method="post" id="f">	
+				<div class="phoneRegister">
+					<div class="text">
+						<span>手机号:</span>
+						<input type="text" name="username" id="txtusername" placeholder="请输入手机号" />
+					</div>
+					
+					<div class="checkMa">
+						<span>验证码&nbsp;:</span>
+						<input type="text" name=""  placeholder="请输入验证码" />
+						<li></li>
+					</div>
+					<p>确保上方验证码输入正确，点击下方"获取短信验证码"，
+						并将您手机短信所接收到的“6位动态码”输入到下方短
+						信验证，再提交下一步。
+					</p>
+					
+					<div class="phoneCheck">
+						<span>短信验证&nbsp;:</span>
+						<input type="text" name="" id="" placeholder="请输入6位短信验证码" />
+						<li></li>
+					</div>
+					<a  href="javascript:void(0)" class="next">
+						下一步
+					</a>
 				</div>
 				
-				<div class="checkMa">
-					<span>验证码&nbsp;:</span>
-					<input type="text" name="" id="" placeholder="请输入验证码" />
-					<li></li>
+				<div class="numRegister">
+					<ul>
+						<li id="li1" ><span>用户名&nbsp; :</span><input type="text" id="numname" placeholder="请使用3-15位的数字，字母，_"/></li>
+						<li id="li2"><span>设置密码&nbsp; :</span><input type="password" id="numpass" placeholder="6-20个数字或字母"/></li>
+						<li id="li3"><span>确认密码&nbsp; :</span><input type="password"  placeholder="请再次输入密码"/></li>
+						<li id="li4"><span>邮箱 &nbsp; :</span><input type="text" id="email" placeholder="请使用常用邮箱作为验证及找回密码使用"/></li>
+						<li id="li5"><span>验证码 &nbsp; :</span><input type="text" id="numCheckMa" placeholder="输入验证码"/><label></label></li>
+						<li id="li6"><span>手机号 &nbsp; :</span><input type="text" id="numphone" placeholder="请输入手机号码"/></li>
+						<li><span>短信验证 &nbsp; :</span><input type="text" id="nummesage" placeholder="请输入验证码"/><label></label></li>
+						
+						<li id="li7"><input type="checkbox"/> 阅读并同意<a href="javascript:void(0)">《服务协议》</a></li>
+						<li id="numReg">立即注册</li>
+					</ul>
 				</div>
-				<p>确保上方验证码输入正确，点击下方"获取短信验证码"，
-					并将您手机短信所接收到的“6位动态码”输入到下方短
-					信验证，再提交下一步。
-				</p>
-				
-				<div class="phoneCheck">
-					<span>短信验证&nbsp;:</span>
-					<input type="text" name="" id="" placeholder="请输入6位短信验证码" />
-					<li></li>
-				</div>
-				<a  href="#" class="next">
-					下一步
-				</a>
 			</form>
+			
+			
 		</div>
 		<div class="banner_con_right">
 			<p>注册之后您可以</p>
