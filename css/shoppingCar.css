@@ -47,14 +47,112 @@
         font-size: 12px; }
     .shoppingCar .shoppingCar_con .shopNav {
       color: #61696b;
-      font-size: 12px;
+      font-size: 14px;
       margin-top: 20px;
       height: 40px;
       line-height: 40px;
       padding: 0 15px;
       background: #fafafa; }
-      .shoppingCar .shoppingCar_con .shopNav input {
-        height: 12px;
-        width: 12px; }
-      .shoppingCar .shoppingCar_con .shopNav span:nth-child(1) {
-        margin-left: 340px; }
+      .shoppingCar .shoppingCar_con .shopNav ul li {
+        font-size: 12px;
+        color: #8a8687;
+        float: left; }
+        .shoppingCar .shoppingCar_con .shopNav ul li input {
+          vertical-align: middle;
+          margin-right: 5px; }
+      .shoppingCar .shoppingCar_con .shopNav ul li:nth-child(2) {
+        margin-left: 340px;
+        margin-right: 267px; }
+      .shoppingCar .shoppingCar_con .shopNav ul li:nth-child(3) {
+        margin-right: 112px; }
+      .shoppingCar .shoppingCar_con .shopNav ul li:nth-child(4) {
+        margin-right: 112px; }
+      .shoppingCar .shoppingCar_con .shopNav ul li:nth-child(5) {
+        margin-right: 80px; }
+    .shoppingCar .shoppingCar_con .shoppingCar_list {
+      font-size: 12px; }
+      .shoppingCar .shoppingCar_con .shoppingCar_list .shoppingCar_list_con {
+        margin-bottom: 20px; }
+      .shoppingCar .shoppingCar_con .shoppingCar_list .shoppingCar_list_con:last-child {
+        margin-bottom: 0; }
+      .shoppingCar .shoppingCar_con .shoppingCar_list h5 {
+        padding: 0;
+        text-indent: 10px;
+        color: #36312e;
+        height: 52px;
+        line-height: 52px;
+        font-size: 14px;
+        font-weight: 100; }
+      .shoppingCar .shoppingCar_con .shoppingCar_list ul li:last-child {
+        border-bottom: 1px solid #dedede; }
+      .shoppingCar .shoppingCar_con .shoppingCar_list ul li {
+        border: 1px solid #dedede;
+        border-bottom: none;
+        height: 75px;
+        padding: 10px 0px 20px 20px; }
+        .shoppingCar .shoppingCar_con .shoppingCar_list ul li div {
+          float: left;
+          color: #36312e;
+          font-size: 12px; }
+        .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(2) {
+          margin: 0 145px 0 40px; }
+          .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(2) img {
+            height: 80px;
+            border: 1px solid #dddddd; }
+        .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(3) {
+          margin-right: 195px;
+          text-align: center; }
+          .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(3) p:last-child {
+            color: #9b9c9e;
+            margin-top: 12px; }
+        .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(4) {
+          font-weight: 900;
+          text-align: center;
+          margin-right: 90px; }
+        .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(5) {
+          margin-right: 85px; }
+          .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(5) span {
+            height: 30px;
+            width: 30px;
+            display: block;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            background: #f5f5f5;
+            cursor: pointer; }
+          .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(5) span:nth-child(2) {
+            background: none;
+            border: 1px solid #dddddd;
+            box-sizing: border-box; }
+        .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(6) {
+          color: #cd000b;
+          font-weight: 800;
+          margin-right: 75px; }
+        .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(7) {
+          text-align: center; }
+          .shoppingCar .shoppingCar_con .shoppingCar_list ul li div:nth-child(7) p {
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer; }
+    .shoppingCar .shoppingCar_con .shoppingCar_totalMoney {
+      height: 90px;
+      width: 100%;
+      line-height: 90px; }
+      .shoppingCar .shoppingCar_con .shoppingCar_totalMoney div {
+        float: right;
+        font-size: 12px; }
+        .shoppingCar .shoppingCar_con .shoppingCar_totalMoney div span:first-child {
+          font-size: 12px; }
+        .shoppingCar .shoppingCar_con .shoppingCar_totalMoney div span:nth-child(2) {
+          font-size: 20px;
+          color: #f9230b; }
+        .shoppingCar .shoppingCar_con .shoppingCar_totalMoney div #submit {
+          height: 40px;
+          width: 110px;
+          background: #f12615;
+          color: white;
+          font-size: 20px;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          margin-left: 15px; }
